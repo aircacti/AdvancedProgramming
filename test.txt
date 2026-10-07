@@ -1,1 +1,3 @@
-Wersja A i B
+Zmiana 1
+Szybka zmiana 2
+Szybka zmiana 3
