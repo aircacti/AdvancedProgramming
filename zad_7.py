@@ -40,7 +40,14 @@ class Brewery:
         self.street = street
 
     def __str__(self) -> str:
-        return f"({self.id},{self.name},{self.brewery_type},{self.address_1},{self.address_2},{self.address_3},{self.city},{self.state_province},{self.postal_code},{self.country},{self.longitude},{self.latitude},{self.phone},{self.website_url},{self.state},{self.street})"
+        return (f"({self.id},{self.name},{self.brewery_type},"
+                f"{self.address_1},{self.address_2},"
+                f"{self.address_3},{self.city},"
+                f"{self.state_province},{self.postal_code},"
+                f"{self.country},{self.longitude},"
+                f"{self.latitude},{self.phone},"
+                f"{self.website_url},{self.state},{self.street})")
+
 
 def run() -> None:
     url = "https://api.openbrewerydb.org/v1/breweries"

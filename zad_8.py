@@ -2,6 +2,7 @@
 import requests
 import argparse
 
+
 class Brewery:
     def __init__(
         self,
@@ -40,13 +41,19 @@ class Brewery:
         self.street = street
 
     def __str__(self) -> str:
-        return f"({self.id},{self.name},{self.brewery_type},{self.address_1},{self.address_2},{self.address_3},{self.city},{self.state_province},{self.postal_code},{self.country},{self.longitude},{self.latitude},{self.phone},{self.website_url},{self.state},{self.street})"
+        return (f"({self.id},{self.name},{self.brewery_type},"
+                f"{self.address_1},{self.address_2},"
+                f"{self.address_3},{self.city},"
+                f"{self.state_province},{self.postal_code},"
+                f"{self.country},{self.longitude},{self.latitude},"
+                f"{self.phone},{self.website_url},{self.state},"
+                f"{self.street})")
+
 
 def run() -> None:
     parser = argparse.ArgumentParser(description="Filtry browarów")
     parser.add_argument('--city', type=str, help="Miasto browaru")
     args = parser.parse_args()
-
 
     url = "https://api.openbrewerydb.org/v1/breweries"
 
@@ -85,6 +92,7 @@ def run() -> None:
                 print(brewery)
         else:
             print(brewery)
+
 
 if __name__ == "__main__":
     run()

@@ -1,4 +1,3 @@
-
 def checkNumberEven(num) -> bool:
     return num % 2 == 0
 

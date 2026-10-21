@@ -1,5 +1,3 @@
-
-
 def doThing(a: list, b: list) -> list:
     combined = a.copy()
 
@@ -13,6 +11,7 @@ def doThing(a: list, b: list) -> list:
 
     return powered
 
-a = [1,2,3]
-b = [2,4]
-print(doThing(a,b))
+
+a = [1, 2, 3]
+b = [2, 4]
+print(doThing(a, b))
