@@ -3,4 +3,5 @@ def showNames(names):
     for name in names:
         print(name)
 
+
 showNames(["Jan", "Mateusz", "Rafał", "Grzegorz", "Leon"])

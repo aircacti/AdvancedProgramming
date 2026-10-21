@@ -1,5 +1,5 @@
 
-def doMath1(nums ):
+def doMath1(nums):
     newNums = []
 
     for num in nums:
@@ -7,9 +7,11 @@ def doMath1(nums ):
 
     return newNums
 
-def doMath2(nums):
-    return [ num*2 for num in nums ]
 
-input = [1,2,3,4,5]
+def doMath2(nums):
+    return [num * 2 for num in nums]
+
+
+input = [1, 2, 3, 4, 5]
 print(doMath1(input))
 print(doMath2(input))
