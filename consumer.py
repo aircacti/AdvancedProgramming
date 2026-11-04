@@ -43,7 +43,9 @@ def take_job():
 
         job_id = row[0]
 
-        CUR.execute("UPDATE jobs SET status = 'in_progress' WHERE id = ?", (job_id,))
+        CUR.execute(
+            "UPDATE jobs SET status = 'in_progress' WHERE id = ?", (job_id,)
+        )
         CON.commit()
 
         return job_id
